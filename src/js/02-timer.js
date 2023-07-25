@@ -34,7 +34,7 @@ function onStartBtnClick() {
     // if (intId) {
     //     clearInterval(intId);
     // }
-    intId = setInterval(() => {
+    const intId = setInterval(() => {
         const gap = startDate - new Date();
         const { days, hours, minutes, seconds } = convertMs(gap);
         if (gap<0) {
